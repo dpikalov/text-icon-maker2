@@ -1,10 +1,8 @@
 //
-$(function render() {
+function render() {
     const ctx    = $('canvas').get(0).getContext('2d');
     const W      = $('canvas').attr('width');
     const H      = $('canvas').attr('height');
-
-    $('#color, #text1, #text2, #text3').on('input',() => setTimeout(render, 100))
 
     // background color
     ctx.fillStyle = $('#color').val();
@@ -33,4 +31,9 @@ $(function render() {
 
     // update link
     document.getElementById('a').href = $('canvas').get(0).toDataURL()
+}
+
+$(function() {
+    $('#color, #text1, #text2, #text3').on('input', render)
+    render()
 })
