@@ -4,7 +4,7 @@ $(function render() {
     const W      = $('canvas').attr('width');
     const H      = $('canvas').attr('height');
 
-    $('#color, #text1, #text2, #text3').on('input',() => setTimeout(render, 1))
+    $('#color, #text1, #text2, #text3').on('input',() => setTimeout(render, 100))
 
     // background color
     ctx.fillStyle = $('#color').val();
