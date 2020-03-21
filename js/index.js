@@ -20,7 +20,7 @@ function render() {
     ctx.textAlign = "center";
     ctx.textBaseline = 'middle';
     ctx.fillStyle = "#000000";
-    ctx.fillText($('#text2').val(), W / 2, H / 2 + 20);
+    ctx.fillText($('#text2').val(), W / 2, H / 2 + H * 0.02);
 
     // text3
     ctx.font = '64px arial';
